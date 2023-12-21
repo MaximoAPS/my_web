@@ -79,7 +79,7 @@ navbar_title_style = {
     "border_right_width":"0.05em",
     "border_top_color":"blue",
     "border_top_width":"0.15em",
-    "width":"12em"
+    "width":"15em"
 }
 
 navbar_secondary_style = {
@@ -95,7 +95,7 @@ navbar_secondary_style = {
     "border_right_width":"0.05em",
     "border_top_color":Color.SECONDARY.value,
     "border_top_width":"0.1em",
-    "width":"12em",
+    "width":"15em",
     "border_bottom_color":Color.SECONDARY.value,
     "border_bottom_width":"0.05em"
 }

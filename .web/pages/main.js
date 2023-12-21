@@ -16,7 +16,7 @@ export default function Component() {
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
   <Box sx={{"backgroundColor": "#2D2D2D", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderBottomColor": "#3C3C41", "borderBottomWidth": "0.05em", "marginBottom": "0.5em"}}>
   <HStack spacing={`0px`} sx={{"position": "sticky", "width": "100%", "zIndex": "100", "top": "0", "backgroundColor": "#1E1E1E", "marginTop": "0.5em"}}>
-  <HStack sx={{"fontFamily": "Fira Code", "fontWeight": "200", "fontSize": "1em", "backgroundColor": "#2D2D2D", "paddingX": "1em", "paddingY": "0.5em", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderRightColor": "#3C3C41", "borderRightWidth": "0.05em", "borderTopColor": "blue", "borderTopWidth": "0.15em", "width": "12em"}}>
+  <HStack sx={{"fontFamily": "Fira Code", "fontWeight": "200", "fontSize": "1em", "backgroundColor": "#2D2D2D", "paddingX": "1em", "paddingY": "0.5em", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderRightColor": "#3C3C41", "borderRightWidth": "0.05em", "borderTopColor": "blue", "borderTopWidth": "0.15em", "width": "15em"}}>
   <ChakraImage src={`/python_icon.png`} sx={{"height": "1em"}}/>
   <Text as={`span`} sx={{"color": "#D7D7D7"}}>
   {`max.py`}
@@ -191,7 +191,7 @@ export default function Component() {
 </Box>
   <NextHead>
   <title>
-  {`main`}
+  {`max.py | Python Developer`}
 </title>
   <meta content={`A Reflex app.`} name={`description`}/>
   <meta content={`favicon.ico`} property={`og:image`}/>

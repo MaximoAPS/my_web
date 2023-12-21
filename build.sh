@@ -10,3 +10,5 @@ tar -xvf frontend.zip
 del frontend.zip
 cd..
 deactivate
+
+git add . && git commit -m "My msj"

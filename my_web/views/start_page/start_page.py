@@ -45,6 +45,7 @@ def start_page()-> rx.Component:
                 ),
                 href= "/main",
                 text_decoration="none",
+                width = "20em"
             ),
             width = "50%",
             height="25%",

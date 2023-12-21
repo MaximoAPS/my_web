@@ -33,7 +33,7 @@ export default function Component() {
 </Text>
 </HStack>
   <Spacer/>
-  <Link as={NextLink} href={`/main`} sx={{"textDecoration": "none", "_hover": {}}}>
+  <Link as={NextLink} href={`/main`} sx={{"textDecoration": "none", "width": "20em", "_hover": {}}}>
   <Button sx={{"backgroundColor": "#1E1E1E", "_hover": {"backgroundColor": "#2D2D2D"}, "borderRadius": "0px", "borderColor": "#AFAFAF", "borderWidth": "0.05em", "width": "100%", "height": "100%", "padding": "0.5em", "color": "#D7D7D7", "whiteSpace": "normal", "textAlign": "start"}}>
   <Text sx={{"fontFamily": "Fira Code", "fontWeight": "200", "fontSize": "1em", "color": "#D7D7D7"}}>
   {`Ejecutar archivo de Python`}
@@ -43,7 +43,7 @@ export default function Component() {
 </HStack>
   <NextHead>
   <title>
-  {`Reflex App`}
+  {`Ejecutar`}
 </title>
   <meta content={`A Reflex app.`} name={`description`}/>
   <meta content={`favicon.ico`} property={`og:image`}/>

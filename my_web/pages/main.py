@@ -7,7 +7,7 @@ import my_web.styles.styles as styles
 from my_web.styles.colors import Color as Color
 from my_web.styles.styles import Size as Size
 
-@rx.page(route="/main",title="main")
+@rx.page(route="/main",title="max.py | Python Developer")
 def main():
     return rx.box(
         navbar(),
