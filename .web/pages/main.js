@@ -1,7 +1,7 @@
 
 /** @jsxImportSource @emotion/react */import { Fragment } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { Avatar, Box, Button, Center, Flex, Heading, HStack, Image as ChakraImage, Link, Spacer, Text, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, Center, Heading, HStack, Image as ChakraImage, Link, Spacer, Tab, TabList, TabPanel, TabPanels, Tabs, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
 import { CloseIcon, EmailIcon } from "@chakra-ui/icons"
@@ -14,9 +14,11 @@ export default function Component() {
   return (
     <Fragment>
   <Fragment_fd0e7cb8f9fb4669a6805377d925fba0/>
-  <Box sx={{"backgroundColor": "#2D2D2D", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderBottomColor": "#3C3C41", "borderBottomWidth": "0.05em", "marginBottom": "0.5em"}}>
-  <HStack spacing={`0px`} sx={{"position": "sticky", "width": "100%", "zIndex": "100", "top": "0", "backgroundColor": "#1E1E1E", "marginTop": "0.5em"}}>
-  <HStack sx={{"fontFamily": "Fira Code", "fontWeight": "200", "fontSize": "1em", "backgroundColor": "#2D2D2D", "paddingX": "1em", "paddingY": "0.5em", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderRightColor": "#3C3C41", "borderRightWidth": "0.05em", "borderTopColor": "blue", "borderTopWidth": "0.15em", "width": "15em"}}>
+  <Box>
+  <Tabs sx={{"position": "sticky", "width": "100%", "zIndex": "100", "top": "0", "backgroundColor": "#1E1E1E", "marginTop": "0.5em", "spacing": "0px"}}>
+  <TabList sx={{"fontFamily": "Fira Code", "fontWeight": "200", "fontSize": "1em", "backgroundColor": "#1E1E1E", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderRightColor": "#3C3C41", "borderRightWidth": "0.05em", "borderTopColor": "#3C3C41", "borderTopWidth": "0.1em", "width": "100%", "borderBottomColor": "#3C3C41", "borderBottomWidth": "0.05em", "margin": "0px", "position": "sticky", "top": "0px", "zIndex": "200"}}>
+  <Tab sx={{"fontFamily": "Fira Code", "fontWeight": "200", "fontSize": "1em", "backgroundColor": "#1E1E1E", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderRightColor": "#3C3C41", "borderRightWidth": "0.05em", "borderTopColor": "#3C3C41", "borderTopWidth": "0.1em", "width": "15em", "borderBottomColor": "#3C3C41", "borderBottomWidth": "0.05em", "margin": "0px", "_selected": {"fontFamily": "Fira Code", "fontWeight": "200", "fontSize": "1em", "backgroundColor": "#2D2D2D", "margin": "0px", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderRightColor": "#3C3C41", "borderRightWidth": "0.05em", "borderTopColor": "blue", "borderTopWidth": "0.15em", "width": "15em"}}}>
+  <HStack sx={{"width": "100%"}}>
   <ChakraImage src={`/python_icon.png`} sx={{"height": "1em"}}/>
   <Text as={`span`} sx={{"color": "#D7D7D7"}}>
   {`max.py`}
@@ -26,10 +28,11 @@ export default function Component() {
   <CloseIcon sx={{"height": "0.5em", "color": "#D7D7D7"}}/>
 </Link>
 </HStack>
-  <Flex sx={{"width": "100%", "borderTopColor": "#3C3C41", "borderTopWidth": "0.05em", "borderBottomColor": "#3C3C41", "borderBottomWidth": "0.05em", "paddingY": "1.2em"}}>
-  {` `}
-</Flex>
-</HStack>
+</Tab>
+</TabList>
+  <TabPanels sx={{"padding": "0px"}}>
+  <TabPanel sx={{"padding": "0px"}}>
+  <Box sx={{"backgroundColor": "#2D2D2D", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderBottomColor": "#3C3C41", "borderBottomWidth": "0.05em", "marginBottom": "0.5em"}}>
   <Center>
   <VStack sx={{"maxWidth": "600px", "width": "100%", "margin": "2em", "padding": "0.8em"}}>
   <VStack spacing={`0.8em`} sx={{"width": "100%", "marginX": "2em"}}>
@@ -188,6 +191,10 @@ export default function Component() {
   {`@2023 - 2023 max.py by Máximo Peré`}
 </Text>
 </VStack>
+</Box>
+</TabPanel>
+</TabPanels>
+</Tabs>
 </Box>
   <NextHead>
   <title>

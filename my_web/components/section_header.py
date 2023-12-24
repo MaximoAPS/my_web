@@ -21,7 +21,7 @@ def section_header(title:str) -> rx.Component:
             spacing=Size.VERYSMALL.value),
         width="100%",
         spacing= Size.SMALL.value,
-        margin_y = Size.BIG.value,
+        padding_y = Size.BIG.value,
         align_items="start",
         padding_x="30%"
     )

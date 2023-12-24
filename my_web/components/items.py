@@ -3,7 +3,7 @@ import my_web.styles.styles as styles
 import my_web.constants as constants
 
 def items(title:str,body:str) -> rx.Component:
-    return rx.button(
+    return rx.flex(
             rx.hstack(
                 rx.icon(
                     tag="arrow_forward",
@@ -20,10 +20,11 @@ def items(title:str,body:str) -> rx.Component:
                 ),
                 width="100%"
             ),
+            width="100%"
         )
 
 def medals(title:str,body:str,award:str) -> rx.Component:
-    return rx.button(
+    return rx.flex(
             rx.hstack(
                 rx.image(
                     src=constants.MEDALS[award],
@@ -40,4 +41,5 @@ def medals(title:str,body:str,award:str) -> rx.Component:
                 ),
                 width="100%"
             ),
+            width="100%"
         )

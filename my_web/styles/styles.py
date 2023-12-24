@@ -71,8 +71,7 @@ navbar_title_style = {
     "font_weight": FontsWeight.LIGHT.value,
     "font_size":Size.DEFAULT.value,
     "background_color":Color.CONTENT.value,
-    "padding_x":Size.DEFAULT.value,
-    "padding_y":Size.VERYSMALL.value,
+    "margin":"0px",
     "border_left_color":Color.SECONDARY.value,
     "border_left_width":"0.05em",
     "border_right_color":Color.SECONDARY.value,
@@ -87,8 +86,6 @@ navbar_secondary_style = {
     "font_weight": FontsWeight.LIGHT.value,
     "font_size":Size.DEFAULT.value,
     "background_color":Color.BACKGROUND.value,
-    "padding_x":Size.DEFAULT.value,
-    "padding_y":Size.VERYSMALL.value,
     "border_left_color":Color.SECONDARY.value,
     "border_left_width":"0.05em",
     "border_right_color":Color.SECONDARY.value,
@@ -97,7 +94,8 @@ navbar_secondary_style = {
     "border_top_width":"0.1em",
     "width":"15em",
     "border_bottom_color":Color.SECONDARY.value,
-    "border_bottom_width":"0.05em"
+    "border_bottom_width":"0.05em",
+    "margin":"0px"
 }
 
 start_page_style = {

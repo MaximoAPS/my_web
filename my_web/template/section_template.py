@@ -6,9 +6,7 @@ from my_web.styles.styles import Size as Size
 
 def section_template(title:str):
     return rx.box(
-        section_navbar(title),
-
         section_header(title),
-
         rx.spacer(),
+        margin_top="0px"
     )

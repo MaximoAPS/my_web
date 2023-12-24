@@ -11,7 +11,11 @@ from my_web.components.section_navbar import section_navbar
 @rx.page(route="/prompt_engineering_certificate",title="Certificate")
 def prompt_engineering_certificate():
     return rx.box(
-        section_navbar("Certificate"),
+        section_navbar("Certificate",section_panel())
+    )
+
+def section_panel():
+    return rx.box(
         rx.vstack(
             rx.image(src="/prompt engineering certificate.png"),
             color=TextColor.BODY.value,
