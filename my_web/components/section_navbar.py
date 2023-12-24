@@ -16,7 +16,7 @@ def section_navbar(section:str, section_panel:rx.component):
                    rx.tab(tab(section,"/main"),
                    style=styles.navbar_secondary_style,
                    _selected=styles.navbar_title_style,
-                   tabindex=0),
+                   ),
             style=styles.navbar_secondary_style,
             width="100%",
             position="sticky",
@@ -36,4 +36,5 @@ def section_navbar(section:str, section_panel:rx.component):
         ),
         background_color=Color.BACKGROUND.value,
         margin_top=Size.VERYSMALL.value,
+        default_index=1
     )

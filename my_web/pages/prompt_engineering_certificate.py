@@ -1,10 +1,8 @@
 import reflex as rx
-from my_web.template.section_template import section_template
 from my_web.styles.styles import Size as Size
 from my_web.styles.colors import TextColor as TextColor
 from my_web.styles.colors import Color as Color
 from my_web.components.footer import footer
-import my_web.constants as constants
 from my_web.components.section_navbar import section_navbar
 
 
@@ -17,7 +15,8 @@ def prompt_engineering_certificate():
 def section_panel():
     return rx.box(
         rx.vstack(
-            rx.image(src="/prompt engineering certificate.png"),
+            rx.image(src="/prompt engineering certificate.png",
+                     padding_y = Size.DEFAULT.value),
             color=TextColor.BODY.value,
             spacing=Size.VERYSMALL.value,
             padding_x="30%"),
