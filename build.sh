@@ -12,5 +12,5 @@ cd..
 deactivate
 
 git add . 
-git commit -m "My msj"
+git commit -m "reset the backend"
 git push

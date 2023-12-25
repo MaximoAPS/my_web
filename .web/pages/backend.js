@@ -11,6 +11,29 @@ import NextHead from "next/head"
 
 
 
+export function Heading_6a61abd5ea7da8f406fd8c6e10edf828 () {
+  const state__state = useContext(StateContexts.state__state)
+
+
+  return (
+    <Heading>
+  {state__state.count}
+</Heading>
+  )
+}
+
+export function Button_d1aab6d2d8649f695bf315e3c3abff22 () {
+  const [addEvents, connectError] = useContext(EventLoopContext);
+
+  const on_click_051be862d05745b9ead98f43abae2bac = useCallback((_e) => addEvents([Event("state.state.increment", {})], (_e), {}), [addEvents, Event])
+
+  return (
+    <Button colorScheme={`green`} onClick={on_click_051be862d05745b9ead98f43abae2bac} sx={{"width": "100%", "height": "100%", "padding": "0.5em", "borderRadius": "1em", "color": "#D7D7D7", "backgroundColor": "#2D2D2D", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#3C3C41"}}}>
+  {`Increment`}
+</Button>
+  )
+}
+
 export function Button_2113dc8849695707a80e9bd86f964408 () {
   const [addEvents, connectError] = useContext(EventLoopContext);
 
@@ -31,29 +54,6 @@ export function Button_7cffa4d273201269897ea4710c1d8e44 () {
   return (
     <Button onClick={on_click_56e6ee2029bfb75d51cd45a2be8eb839} sx={{"backgroundImage": "linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,176,34,1) 100%)", "color": "white", "width": "100%", "height": "100%", "padding": "0.5em", "borderRadius": "1em", "backgroundColor": "#2D2D2D", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#3C3C41"}}}>
   {`Randomize`}
-</Button>
-  )
-}
-
-export function Heading_6a61abd5ea7da8f406fd8c6e10edf828 () {
-  const state__state = useContext(StateContexts.state__state)
-
-
-  return (
-    <Heading>
-  {state__state.count}
-</Heading>
-  )
-}
-
-export function Button_d1aab6d2d8649f695bf315e3c3abff22 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_051be862d05745b9ead98f43abae2bac = useCallback((_e) => addEvents([Event("state.state.increment", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <Button colorScheme={`green`} onClick={on_click_051be862d05745b9ead98f43abae2bac} sx={{"width": "100%", "height": "100%", "padding": "0.5em", "borderRadius": "1em", "color": "#D7D7D7", "backgroundColor": "#2D2D2D", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#3C3C41"}}}>
-  {`Increment`}
 </Button>
   )
 }
