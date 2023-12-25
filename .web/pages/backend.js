@@ -1,62 +1,13 @@
 
-/** @jsxImportSource @emotion/react */import { Fragment, useCallback, useContext } from "react"
+/** @jsxImportSource @emotion/react */import { Fragment } from "react"
 import { Fragment_fd0e7cb8f9fb4669a6805377d925fba0 } from "/utils/stateful_components"
-import { Avatar, Box, Button, Center, Heading, HStack, Image as ChakraImage, Link, Spacer, Tab, TabList, TabPanel, TabPanels, Tabs, Text, VStack } from "@chakra-ui/react"
+import { Avatar, Box, Button, Center, Flex, Heading, HStack, Image as ChakraImage, Link, Spacer, Tab, TabList, TabPanel, TabPanels, Tabs, Text, VStack } from "@chakra-ui/react"
 import "focus-visible/dist/focus-visible"
 import NextLink from "next/link"
-import { CloseIcon, EmailIcon } from "@chakra-ui/icons"
-import { EventLoopContext, StateContexts } from "/utils/context"
-import { Event } from "/utils/state"
+import { ArrowForwardIcon, CloseIcon, EmailIcon } from "@chakra-ui/icons"
 import NextHead from "next/head"
 
 
-
-export function Heading_6a61abd5ea7da8f406fd8c6e10edf828 () {
-  const state__state = useContext(StateContexts.state__state)
-
-
-  return (
-    <Heading>
-  {state__state.count}
-</Heading>
-  )
-}
-
-export function Button_d1aab6d2d8649f695bf315e3c3abff22 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_051be862d05745b9ead98f43abae2bac = useCallback((_e) => addEvents([Event("state.state.increment", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <Button colorScheme={`green`} onClick={on_click_051be862d05745b9ead98f43abae2bac} sx={{"width": "100%", "height": "100%", "padding": "0.5em", "borderRadius": "1em", "color": "#D7D7D7", "backgroundColor": "#2D2D2D", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#3C3C41"}}}>
-  {`Increment`}
-</Button>
-  )
-}
-
-export function Button_2113dc8849695707a80e9bd86f964408 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_7a4e8882198dad3c2b9a65dd4efed0c6 = useCallback((_e) => addEvents([Event("state.state.decrement", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <Button colorScheme={`red`} onClick={on_click_7a4e8882198dad3c2b9a65dd4efed0c6} sx={{"width": "100%", "height": "100%", "padding": "0.5em", "borderRadius": "1em", "color": "#D7D7D7", "backgroundColor": "#2D2D2D", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#3C3C41"}}}>
-  {`Decrement`}
-</Button>
-  )
-}
-
-export function Button_7cffa4d273201269897ea4710c1d8e44 () {
-  const [addEvents, connectError] = useContext(EventLoopContext);
-
-  const on_click_56e6ee2029bfb75d51cd45a2be8eb839 = useCallback((_e) => addEvents([Event("state.state.random", {})], (_e), {}), [addEvents, Event])
-
-  return (
-    <Button onClick={on_click_56e6ee2029bfb75d51cd45a2be8eb839} sx={{"backgroundImage": "linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,176,34,1) 100%)", "color": "white", "width": "100%", "height": "100%", "padding": "0.5em", "borderRadius": "1em", "backgroundColor": "#2D2D2D", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#3C3C41"}}}>
-  {`Randomize`}
-</Button>
-  )
-}
 
 export default function Component() {
 
@@ -81,7 +32,7 @@ export default function Component() {
   <HStack sx={{"width": "100%"}}>
   <ChakraImage src={`/python_icon.png`} sx={{"height": "1em"}}/>
   <Text as={`span`} sx={{"color": "#D7D7D7"}}>
-  {`Backend`}
+  {`Education`}
 </Text>
   <Spacer/>
   <Link as={NextLink} href={`/main`} sx={{"textDecoration": "none", "_hover": {}}}>
@@ -254,16 +205,90 @@ export default function Component() {
 </Box>
 </TabPanel>
   <TabPanel sx={{"padding": "0px"}}>
-  <Center sx={{"paddingY": "5em", "fontSize": "2em", "textAlign": "center"}}>
-  <VStack sx={{"padding": "1em", "bg": "#ededed", "borderRadius": "1em", "boxShadow": "lg"}}>
-  <Heading_6a61abd5ea7da8f406fd8c6e10edf828/>
-  <HStack>
-  <Button_2113dc8849695707a80e9bd86f964408/>
-  <Button_7cffa4d273201269897ea4710c1d8e44/>
-  <Button_d1aab6d2d8649f695bf315e3c3abff22/>
+  <Box sx={{"backgroundColor": "#2D2D2D", "borderLeftColor": "#3C3C41", "borderLeftWidth": "0.05em", "borderBottomColor": "#3C3C41", "borderBottomWidth": "0.05em", "marginBottom": "0.5em"}}>
+  <Box sx={{"marginTop": "0px"}}>
+  <VStack alignItems={`start`} spacing={`0.8em`} sx={{"width": "100%", "paddingY": "2em", "paddingX": "30%"}}>
+  <HStack spacing={`1em`}>
+  <ChakraImage src={`/graduation-cap-solid.svg`} sx={{"width": "5em"}}/>
+  <Heading size={`lg`} sx={{"fontFamily": "Poppins", "fontWeight": "500", "color": "#D7D7D7", "paddingY": "2em"}}>
+  {`Educación`}
+</Heading>
 </HStack>
+  <VStack spacing={`0.5em`} sx={{"color": "#AFAFAF"}}>
+  <Text>
+  {`¡Bienvenido a la seccion Educación!`}
+</Text>
 </VStack>
-</Center>
+</VStack>
+  <Spacer/>
+</Box>
+  <VStack spacing={`0.5em`} sx={{"color": "#AFAFAF", "paddingX": "30%"}}>
+  <Text>
+  {`Estudie la secundaria en una Escuela Técnica y luego comence varias carreras en la UBA.`}
+</Text>
+  <Text sx={{"width": "100%"}}>
+  {`Mis estudios (completos o incompletos) son los siguientes:`}
+</Text>
+  <Flex sx={{"width": "100%"}}>
+  <HStack sx={{"width": "100%"}}>
+  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0em !important"}}>
+  <Text sx={{"fontFamily": "Poppins", "fontWeight": "500", "fontSize": "1em", "color": "#D7D7D7"}}>
+  {`Técnico en la Indutria del Alimento`}
+</Text>
+  <Text sx={{"fontFamily": "Poppins", "fontWeight": "300", "fontSize": "0.8em", "color": "#AFAFAF"}}>
+  {`Escuela Técnica RAGGIO | 2006 - 2011`}
+</Text>
+</VStack>
+</HStack>
+</Flex>
+  <Flex sx={{"width": "100%"}}>
+  <HStack sx={{"width": "100%"}}>
+  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0em !important"}}>
+  <Text sx={{"fontFamily": "Poppins", "fontWeight": "500", "fontSize": "1em", "color": "#D7D7D7"}}>
+  {`Licenciatura en Ciencias Quimicas`}
+</Text>
+  <Text sx={{"fontFamily": "Poppins", "fontWeight": "300", "fontSize": "0.8em", "color": "#AFAFAF"}}>
+  {`Facultad de Ciencias Exactas y Naturales | 2012 - Presente`}
+</Text>
+</VStack>
+</HStack>
+</Flex>
+  <Flex sx={{"width": "100%"}}>
+  <HStack sx={{"width": "100%"}}>
+  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0em !important"}}>
+  <Text sx={{"fontFamily": "Poppins", "fontWeight": "500", "fontSize": "1em", "color": "#D7D7D7"}}>
+  {`Licenciatura en Matemática`}
+</Text>
+  <Text sx={{"fontFamily": "Poppins", "fontWeight": "300", "fontSize": "0.8em", "color": "#AFAFAF"}}>
+  {`Facultad de Ciencias Exactas y Naturales | 2012 - Presente`}
+</Text>
+</VStack>
+</HStack>
+</Flex>
+  <Flex sx={{"width": "100%"}}>
+  <HStack sx={{"width": "100%"}}>
+  <ArrowForwardIcon sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
+  <VStack alignItems={`start`} spacing={`0.5em`} sx={{"margin": "0em !important"}}>
+  <Text sx={{"fontFamily": "Poppins", "fontWeight": "500", "fontSize": "1em", "color": "#D7D7D7"}}>
+  {`Licenciatura en Ciencias de Datos`}
+</Text>
+  <Text sx={{"fontFamily": "Poppins", "fontWeight": "300", "fontSize": "0.8em", "color": "#AFAFAF"}}>
+  {`Facultad de Ciencias Exactas y Naturales | 2020 - Presente`}
+</Text>
+</VStack>
+</HStack>
+</Flex>
+</VStack>
+  <VStack sx={{"paddingY": "1em", "marginBottom": "1em"}}>
+  <ChakraImage src={`/favicon.ico`}/>
+  <Text sx={{"fontSize": "0.8em", "color": "#C8C8C8", "fontFamily": "Poppins"}}>
+  {`@2023 - 2023 max.py by Máximo Peré`}
+</Text>
+</VStack>
+</Box>
 </TabPanel>
 </TabPanels>
 </Tabs>
