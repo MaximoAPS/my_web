@@ -1,6 +1,7 @@
 import reflex as rx
-from my_web.template.section_template import section_template
+from my_web.components.section_navbar import section_navbar
+from my_web.views.backend_panel import backend_panel
 
-@rx.page(route="/section",title="section")
+@rx.page(route="/backend",title="backend")
 def section_test():
-    return section_template("Educación")
+    return section_navbar("Backend", backend_panel())

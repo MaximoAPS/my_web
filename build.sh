@@ -11,4 +11,6 @@ del frontend.zip
 cd..
 deactivate
 
-git add . && git commit -m "My msj"
+git add . 
+git commit -m "My msj"
+git push
