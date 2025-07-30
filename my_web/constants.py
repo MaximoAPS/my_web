@@ -2,7 +2,7 @@
 
 URL = {
     "GitHub" : "https://github.com/MaximoAPS",
-    "Linkedin" : "https://www.linkedin.com/in/m%C3%A1ximo-per%C3%A9-42b76512b/",
+    "Linkedin" : "https://www.linkedin.com/in/maximopere/",
     "Prompt Engineering for ChatGPT": "https://www.coursera.org/account/accomplishments/certificate/KFW3B5DG8MZJ",
     "IA para todos": "https://www.coursera.org/account/accomplishments/certificate/87EW584YGE8P",
     "Foundations: Data, Data, Everywhere": "https://www.coursera.org/account/accomplishments/certificate/47PB4MR7PQF9",
