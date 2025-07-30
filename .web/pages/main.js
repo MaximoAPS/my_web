@@ -166,7 +166,7 @@ export default function Component() {
 </HStack>
 </Button>
 </Link>
-  <Link as={NextLink} href={`https://www.linkedin.com/in/m%C3%A1ximo-per%C3%A9-42b76512b/`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
+  <Link as={NextLink} href={`https://www.linkedin.com/in/maximopere/`} isExternal={true} sx={{"width": "100%", "textDecoration": "none", "_hover": {}}}>
   <Button sx={{"width": "100%", "height": "100%", "padding": "0.5em", "borderRadius": "1em", "color": "#D7D7D7", "backgroundColor": "#2D2D2D", "whiteSpace": "normal", "textAlign": "start", "_hover": {"backgroundColor": "#3C3C41"}}}>
   <HStack sx={{"width": "100%"}}>
   <ChakraImage src={`/linkedin.svg`} sx={{"width": "2em", "height": "2em", "margin": "0.8em"}}/>
@@ -188,7 +188,7 @@ export default function Component() {
   <VStack sx={{"paddingY": "1em", "marginBottom": "1em"}}>
   <ChakraImage src={`/favicon.ico`}/>
   <Text sx={{"fontSize": "0.8em", "color": "#C8C8C8", "fontFamily": "Poppins"}}>
-  {`@2023 - 2023 max.py by Máximo Peré`}
+  {`@2023 - 2025 max.py by Máximo Peré`}
 </Text>
 </VStack>
 </Box>
